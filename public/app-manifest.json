@@ -1,6 +1,7 @@
 {
   "name": "App Name",
   "short_name": "AppName",
+  "description": "Shift tracker to help people track and manage their shifts.",
   "id": "/",
   "lang": "en-gb",
   "start_url": ".",
@@ -10,6 +11,13 @@
   "theme_color": "#000000",
   "orientation": "portrait",
   "related_applications": [],
+  "screenshots": [
+    {
+      "src": "PWA-IMAGES/screenshots/screen.png",
+      "sizes": "1617x1012",
+      "type": "image/png"
+    }
+  ],
   "splash_pages": [
     {
       "src": "PWA-IMAGES/splash_portrait.png",
