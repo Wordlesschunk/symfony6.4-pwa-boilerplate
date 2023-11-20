@@ -1,20 +1,30 @@
 {
   "name": "App Name",
   "short_name": "AppName",
+  "id": "/",
+  "lang": "en-gb",
   "start_url": ".",
   "display": "standalone",
   "scope" : "/",
   "background_color": "#000000",
   "theme_color": "#000000",
   "orientation": "portrait",
+  "related_applications": [],
+  "splash_pages": [
+    {
+      "src": "PWA-IMAGES/splash_portrait.png",
+      "sizes": "2048x2732",
+      "type": "image/png"
+    }
+  ],
   "icons": [
     {
-      "src": "img/Icon/vp-bg-512x512.png",
+      "src": "PWA-IMAGES/vp-bg-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "img/Icon/vp-bg-192x192.png",
+      "src": "PWA-IMAGES/vp-bg-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     }
