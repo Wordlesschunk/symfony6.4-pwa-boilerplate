@@ -1,9 +1,4 @@
-//--------------------------------------------------------------------------
-// You can find dozens of practical, detailed, and working examples of
-// service worker usage on https://github.com/mozilla/serviceworker-cookbook
-//--------------------------------------------------------------------------
-
-console.log('Server Worked Called And Running!');
+console.log('Service Worker Booted!');
 
 const CACHE_NAME = "offline";
 const OFFLINE_URL = "/offline";
@@ -20,7 +15,6 @@ self.addEventListener("install", (event) => {
                 await cache.put(OFFLINE_URL, response.clone());
             } catch (error) {
                 console.error('Failed to cache the offline page:', error);
-                // You might want to handle this error gracefully or retry the installation
             }
         })()
     );
@@ -38,7 +32,7 @@ self.addEventListener("activate", (event) => {
         })()
     );
 
-    // Tell the active service worker to take control of the page immediately.
+    // Telling the active service worker to take control of the page immediately.
     self.clients.claim();
 });
 
